@@ -16,7 +16,6 @@ xg_reg.fit(X_train,y_train)
 
 # Predict the labels of the test set: preds
 preds = xg_reg.predict(X_test)
-
 # Compute the rmse: rmse
 rmse = np.sqrt(mean_squared_error(y_test, preds))
 print("RMSE: %f" % (rmse))
